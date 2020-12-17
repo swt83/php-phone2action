@@ -1,0 +1,11 @@
+{
+    "name": "travis/phone2action",
+    "description": "A PHP package for working w/ the Phone2Action API.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Travis\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
