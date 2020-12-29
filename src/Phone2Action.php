@@ -18,7 +18,7 @@ class Phone2Action
     public static function run($api_app_id, $api_app_key, $method, $type, $arguments = [], $timeout = 30)
     {
         // set endpoint
-        $url = 'https://api.phone2action.com/2.0/'.$method;
+        $url = 'https://api.phone2action.com/2.0/'.$method.'?'.http_build_query($arguments);
 
         // build auth string
         $auth = $api_app_id.':'.$api_app_key;
